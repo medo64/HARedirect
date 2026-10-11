@@ -1,0 +1,21 @@
+---
+version: 0.1.0
+slug: haredirect
+name: HA Redirect
+description: Forwards HTTP requests to HTTPS
+url: https://github.com/medo64/haredirect
+arch:
+  - aarch64
+  - amd64
+ingress: true
+init: false
+options:
+  http_port: 80
+  https_port: 443
+ports:
+  80/tcp: 80
+ports_description":
+  80/tcp: Port to listen to
+schema:
+  http_port: "int?"
+  https_port: "int?"
